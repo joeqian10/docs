@@ -1,6 +1,6 @@
-###NEO Documentation
+###Neo Documentation
 
-####Here is an exhaustive library of NEO technical documents, including development examples for your reference.
+####Here is an exhaustive library of Neo technical documents, including development examples for your reference.
 
 | NEO Introduction  | | | |
 | ---------------------------------- | ----------------------------------------------- | ---------------------------------- | ---------------------------------------------- |
@@ -36,7 +36,6 @@
 
 | Reference  | | | |
 | ---------------------------------------------- | -------------------------------------------- | ------------------------------------------------- | ----------------------------------------------------------- |
-| [RPC API](reference/rpc/latest-version/api.md) | [Smart Contract API](reference/scapi/api.md) | [Smart Contract Framework](reference/scapi/fw.md) | [SDK API (C#)](https://docs.neo.org/developerguide/zh/api/index.html) |
-| [NeoVM Instructions](reference/neo_vm.md) |  |  |  |
+| [RPC API](reference/rpc/latest-version/api.md) | [Smart Contract API](reference/scapi/api.md) | [Smart Contract Framework](reference/scapi/fw.md) | [NeoVM Instructions](reference/neo_vm.md) |
 
 <link href="index.css" rel="stylesheet" />
