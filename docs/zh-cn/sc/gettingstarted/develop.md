@@ -27,25 +27,21 @@
 1. 在 Github 上拉取 [neo-devpack-dotnet](https://github.com/neo-project/neo-devpack-dotnet) 项目到本地并打开。
 2. 将 Git 分支切换为 `master-2.x`（master 分支为 Neo3 的编译器）。
 3. 发布 `Neo.Compiler.MSIL` 项目。
-
 4. 发布成功后，会在 ...\Neo.Compiler.MSIL\bin\Release\netcoreapp3.1\publish\ 目录下看到 `neon.exe` 文件。
-
 
 ### 设置环境变量
 
-接下来需要添加 path，让任何位置都能访问 neon.exe。方法如下：
+接下来需要添加 Path，让任何位置都能访问 neon.exe。方法如下：
 
-1. 在 Windows10 上 按 Windows + S 键，输入环境变量，选择 `编辑系统环境变量` 
-
+1. 在 Windows10 上 按 Windows + S 键，输入环境变量，选择 `编辑系统环境变量`
 2. 选择 Path, 点击 `编辑`:
-
 3. 在弹出来的窗口中点击 `新建` 并输入你自己的 neon.exe 所在的文件夹目录，点击 `确定` 。
 
 > [!Note]
 >
 > 在环境变量中不要添加 “…… neon.exe” 字样的路径，要填写 neon.exe **所在的文件夹目录** 而非 neon.exe 本身的路径。
 
-添加完 path 后，运行 CMD 或者 PowerShell 测试一下（如果添加 path 前就已经启动了 CMD 则要关掉重启），输入 neon 后，没有报错，如图所示输出版本号的提示信息即表示环境变量配置成功。
+添加完 Path 后，运行 CMD 或者 PowerShell 测试一下（如果添加 path 前就已经启动了 CMD 则要关掉重启），输入 neon 后，没有报错，如图所示输出版本号的提示信息即表示环境变量配置成功。
 
 ![3_1545037391347](assets/3_1545037391347.png)
 
@@ -83,7 +79,7 @@
    > 在 VS 中右击解决方案文件，点击 `管理 NuGet 程序包`，在新打开的页面中将 Neo.SmartContract.Framework 更新到最新稳定版。如果更新完之后依然存在红线，并且右侧 “引用” 中仍有个感叹号，可以尝试双击感叹号。如果仍然无法解决问题，可以尝试下面的办法：
    >
    > 1. 在 [这里](https://www.nuget.org/downloads) 下载 nuget.exe，然后将其复制到 NeoContract 项目的根目录。
-   > 2. 打开 Power Shell 或命令提示符（CMD）。
+   > 2. 打开 PowerShell 或命令提示符（CMD）。
    > 3. 转到 NeoContract 项目的根目录，运行 `nuget restore` 即可。
 
 4. 这里我们对示例文件进行一些修改：
@@ -229,17 +225,16 @@ namespace NEP5
 
 ## 编译合约文件
 
-点击菜单栏上的 `生成`->`生成解决方案`（快捷键 Ctrl + Shift + B）开始编译程序。
+点击菜单栏上的 `生成` -> `生成解决方案`（快捷键 Ctrl + Shift + B）开始编译程序。
 
-![](assets/compile.png)
+![compile](assets/compile.png)
 
 编译成功后你会在该项目的 `bin/Debug` 目录下看到生成的 `NeoContract1.avm` 文件，该文件即是生成的 Neo 智能合约文件。
 
-![](assets/contractfile.png)
+![contractfile](assets/contractfile.png)
 
 `NeoContract1.abi.json` 是智能合约的描述文档，文档中对合约的 ScriptHash、入口、方法、参数、返回值等进行了描述。关于更多智能合约 ABI 的信息，可以参考 [NeoContract ABI](https://github.com/neo-project/proposals/blob/master/nep-3.mediawiki)。
 
 ## 继续阅读
 
 [部署与调用合约](deploy.md)
-
